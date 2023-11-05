@@ -1,0 +1,109 @@
+.openModal {
+  cursor: pointer;
+  background-color: var(--gray-500);
+  border: 0;
+  padding: 0.25rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  margin-top: -1rem;
+  display: flex;
+  margin: 0 auto;
+  transition: 0.3s background-color;
+}
+
+.openModal:hover {
+  background-color: var(--gray-400);
+}
+
+.closeModal {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s opacity;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.closeModal:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+
+.modal .modalContainer {
+  position: relative;
+  max-width: 600px;
+  min-height: 235px;
+  margin: auto;
+  padding: 2.5rem;
+  background-color: var(--gray-500);
+}
+
+.contentModal {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.contentModal .modalDate {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contentModal .modalDate p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.625rem;
+}
+
+.contentModal .modalDate p strong {
+  display: block;
+  font-size: 0.75rem;
+}
+
+.contentModal .descriptionModal {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  line-height: 1.125rem;
+}
+
+div.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+div.actions button {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s opacity;
+}
+
+div.actions button:hover {
+  opacity: 0.8;
+}
+
+div.actions button.completed {
+  background-color: var(--success);
+}
+
+div.actions button.removed {
+  background-color: var(--danger);
+}
+
+div.actions button.undo {
+  background-color: var(--blue-dark);
+}
